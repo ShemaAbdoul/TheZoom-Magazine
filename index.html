@@ -6,6 +6,7 @@
 <title>The Zoom Magazine</title>
 <meta name="description" content="Close-ups on tech, business, culture and sport.">
 <meta name="theme-color" content="#2540ff">
+<script src="theme.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Newsreader:opsz,wght@6..72,400..600&display=swap" rel="stylesheet">
@@ -15,7 +16,7 @@
 <div id="bar"></div>
 <header id="head">
   <a class="logo" href="#top" aria-label="The Zoom Magazine, back to top">The Z<span class="o"></span><span class="o"></span>m</a>
-  <nav><a href="#stories">Stories</a><a href="#newsletter">Newsletter</a></nav>
+  <nav><a href="#stories">Stories</a><a href="about.html">About &amp; Contact</a><button class="theme" id="theme" role="switch" aria-checked="false" aria-label="Dark mode"></button></nav>
 </header>
 
 <main id="top">
@@ -36,6 +37,7 @@
 
   <section class="wrap" id="stories">
     <h2>Latest stories</h2>
+    <div class="tools">
     <div class="chips" role="group" aria-label="Filter stories by topic">
       <button class="chip" data-f="All" aria-pressed="true">All</button>
       <button class="chip" data-f="Tech" aria-pressed="false">Tech</button>
@@ -43,6 +45,9 @@
       <button class="chip" data-f="Culture" aria-pressed="false">Culture</button>
       <button class="chip" data-f="Sport" aria-pressed="false">Sport</button>
     </div>
+    <input class="search" id="q" type="search" placeholder="Search stories (press /)" aria-label="Search stories" autocomplete="off">
+    </div>
+    <p class="count" id="count" aria-live="polite"></p>
     <div class="grid" id="grid"><noscript>Turn on JavaScript to read the stories.</noscript></div>
   </section>
 
@@ -61,7 +66,7 @@
 
 <footer class="wrap">
   <span>&copy; <span id="year">2026</span> The Zoom Magazine</span>
-  <span>Stories on this page are sample text. Replace them with your own.</span>
+  <span><a href="about.html">About &amp; Contact</a> &middot; Stories on this page are sample text.</span>
 </footer>
 
 <dialog id="reader" aria-labelledby="rt">
