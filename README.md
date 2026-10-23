@@ -11,6 +11,8 @@ An independent magazine website built with plain HTML, CSS and JavaScript. Close
 | `index.html` | Home page: zoom headline, latest stories, most read, newsletter |
 | `story.html` + `story.js` | The page that shows one full story, with a subscribe pop-up as readers scroll |
 | `issues.html` + `issues.js` | The magazine page: latest issue and past issues, read online, buy digital or print |
+| `meet.html` + `person.html` | The Meet page and the full page for each person |
+| `meet.js` | **All the Meet articles** (edit the author, text and pictures here) |
 | `about.html` | About page and contact form |
 | `stories.js` | **All the stories** (edit this to change, add or remove stories) |
 | `config.js` | Your email address and subscribe settings |
@@ -30,6 +32,9 @@ Open `stories.js`. Each story is one block. Change the `title`, `dek` (the short
 - **Story thumbnail and top picture:** save a picture as `images/story-1.jpg` (same number as the story `id`). Best size: 1600 x 900 pixels, under 300 KB.
 - **Issue covers:** `images/issue-07.jpg`. Best size: 800 x 1067 pixels.
 - To replace a picture, upload a new file with the **same name** into the same folder.
+
+### Meet page
+Open `meet.js`. Each block is one article. Change `author` to credit the writer (for example a guest who sent it by email), `cat` to Interview, Profile, Poem, Review or Article, and the `body` text. Pictures are `images/meet-1.jpg` and so on. For poems, end each line with `<br>`.
 
 ### About page
 Open `about.html` and edit the text between the tags, for example the paragraph under *About The Zoom*.

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meet | The Zoom Magazine</title>
+<meta name="description" content="Meet the people featured in The Zoom Magazine: photographers, dancers, poets and painters.">
+<meta name="theme-color" content="#2540ff">
+<script src="theme.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Newsreader:opsz,wght@6..72,400..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="logo" href="index.html" aria-label="The Zoom Magazine, home">The Z<span class="o"></span><span class="o"></span>m</a>
+  <nav><a href="index.html#stories">Stories</a><a href="meet.html" aria-current="page">Meet</a><a href="issues.html">Issues</a><a href="about.html">About</a><button class="theme" id="theme" role="switch" aria-checked="false" aria-label="Dark mode"></button></nav>
+</header>
+
+<main>
+  <section class="wrap meet-hero">
+    <h1>Meet</h1>
+    <p class="lead">The people behind the pictures, the music and the words. Interviews, profiles, poems and reviews.</p>
+  </section>
+  <section class="wrap">
+    <div class="people" id="people"></div>
+  </section>
+  <section class="wrap contribute">
+    <h2>Want to be featured?</h2>
+    <p>Send us a poem, a review, an article or the name of someone we should meet. Tell us who you are and we will credit you as the author.</p>
+    <a class="btn primary" id="send" href="#">Send us your work</a>
+  </section>
+</main>
+
+<footer class="wrap">
+  <span>&copy; <span id="year">2026</span> The Zoom Magazine</span>
+  <span><a href="index.html">Back to the magazine</a> &middot; <a href="about.html#contact">Contact</a></span>
+</footer>
+<script src="config.js"></script>
+<script src="stories.js"></script>
+<script src="meet.js"></script>
+<script>
+const $ = id => document.getElementById(id);
+$('people').innerHTML = MEET.map(p =>
+  `<article class="person"><div class="art portrait" style="--a:${p.colors[0]};--b:${p.colors[1]};--c:${p.colors[2]}"><i></i>${photoTag(p)}</div>` +
+  `<span class="role">${p.role} · ${p.cat}</span><h2><a href="person.html?id=${p.id}">${p.title}</a></h2><p>${p.dek}</p>` +
+  `<span class="by">By ${p.author}</span><span class="go">Read the ${p.cat.toLowerCase()} →</span></article>`).join('');
+$('send').href = 'mailto:' + SITE.email + '?subject=' + encodeURIComponent('Meet The Zoom: my submission') +
+  '&body=' + encodeURIComponent('Your name:\nType (poem, review, article or interview):\nWho is it about:\n\nPaste your piece below, or attach it to this email.');
+$('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

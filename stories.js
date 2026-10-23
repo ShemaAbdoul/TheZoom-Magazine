@@ -99,7 +99,7 @@ const STORIES = [
 
 // ---- You don't need to edit anything below this line ----
 const photoTag = a => `<img src="${a.img}" alt="${a.alt}" loading="lazy" onerror="this.remove()">`;
-const storyCard = (a, feat) =>
+const storyCard = (a, feat, base = 'story.html') =>
   `<article class="card${feat ? ' feat' : ''}"><div class="art" style="--a:${a.colors[0]};--b:${a.colors[1]};--c:${a.colors[2]}"><i></i>${photoTag(a)}</div>` +
   `<div class="meta"><span class="cat">${a.cat}</span><span>${a.mins} min read</span></div>` +
-  `<h3><a href="story.html?id=${a.id}">${a.title}</a></h3><p>${a.dek}</p></article>`;
+  `<h3><a href="${base}?id=${a.id}">${a.title}</a></h3><p>${a.dek}</p></article>`;
