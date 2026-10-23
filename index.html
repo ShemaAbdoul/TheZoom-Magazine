@@ -51,6 +51,11 @@
     <div class="grid" id="grid"><noscript>Turn on JavaScript to read the stories.</noscript></div>
   </section>
 
+  <section class="wrap" id="popular">
+    <h2>Most read</h2>
+    <ol class="top" id="top"></ol>
+  </section>
+
   <section class="wrap teaser">
     <a class="cover" href="issues.html" aria-label="Open the latest issue"><img src="images/issue-07.jpg" alt="Cover of Issue 07: The Close-Up Issue" loading="lazy" onerror="this.remove()"></a>
     <div><span class="badge">Latest issue</span><h2>Issue 07: The Close-Up Issue</h2><p>Read it online, buy a digital copy, or order the print edition.</p><a class="btn primary" href="issues.html">See all issues</a></div>
@@ -74,15 +79,8 @@
   <span><a href="issues.html">Issues</a> &middot; <a href="about.html">About &amp; Contact</a> &middot; Stories on this page are sample text.</span>
 </footer>
 
-<dialog id="reader" aria-labelledby="rt">
-  <div class="xbar"><button class="x" id="close">Close</button></div>
-  <div class="rd-art art" id="rart"><i></i></div>
-  <div class="rd-body">
-    <div class="meta"><span class="cat" id="rc"></span><span id="rm"></span></div>
-    <h2 id="rt"></h2>
-    <div id="rb"></div>
-  </div>
-</dialog>
+<script src="config.js"></script>
+<script src="stories.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

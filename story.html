@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Story | The Zoom Magazine</title>
+<meta name="description" content="A story from The Zoom Magazine.">
+<meta name="theme-color" content="#2540ff">
+<script src="theme.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Newsreader:opsz,wght@6..72,400..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bar"></div>
+<header>
+  <a class="logo" href="index.html" aria-label="The Zoom Magazine, home">The Z<span class="o"></span><span class="o"></span>m</a>
+  <nav><a href="index.html#stories">Stories</a><a href="issues.html">Issues</a><a href="about.html">About</a><button class="theme" id="theme" role="switch" aria-checked="false" aria-label="Dark mode"></button></nav>
+</header>
+
+<main>
+  <article class="wrap article" id="story"></article>
+  <section class="wrap more" id="more" hidden>
+    <h2>Keep reading</h2>
+    <div class="grid" id="related"></div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <span>&copy; <span id="year">2026</span> The Zoom Magazine</span>
+  <span><a href="index.html">Back to the magazine</a> &middot; <a href="issues.html">Issues</a></span>
+</footer>
+
+<aside class="pop" id="pop" role="dialog" aria-labelledby="pt" hidden>
+  <button class="pclose" id="pclose" type="button" aria-label="Close">&times;</button>
+  <h2 id="pt">Enjoying this story?</h2>
+  <p>Get one short email each week with the stories worth a second look.</p>
+  <form id="pform" novalidate>
+    <input id="pemail" type="email" placeholder="you@example.com" aria-label="Email address" autocomplete="email">
+    <button type="submit">Subscribe</button>
+  </form>
+  <p id="pnote" role="status"></p>
+</aside>
+<script src="config.js"></script>
+<script src="stories.js"></script>
+<script src="story.js"></script>
+</body>
+</html>

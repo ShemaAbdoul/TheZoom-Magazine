@@ -1,6 +1,6 @@
-// Your email: order requests open in the visitor's email app.
+// Order requests open in the visitor's email app, using the email address set in config.js.
 // To take payments, paste a payment link into du (digital) or pu (print) and the button goes straight to checkout.
-const TO = 'hello@thezoom.example';
+const TO = SITE.email;
 const NEXT = '2026-11-20'; // date of the next issue
 const I = [
   { n: 7, date: 'October 2026', title: 'The Close-Up Issue', pages: 84, online: true, dp: '$4.99', du: '', pp: '$14.00', pu: '', blurb: 'Eighty-four pages of stories told up close: the builders, sellers and players shaping the city.' },
