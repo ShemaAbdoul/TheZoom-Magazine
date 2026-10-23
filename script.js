@@ -23,7 +23,7 @@ addEventListener('keydown', e => {
 });
 
 // most read: ranked by the "reads" number in stories.js
-$('#top').innerHTML = [...STORIES].sort((a, b) => b.reads - a.reads).slice(0, 4).map((a, i) =>
+$('#mostread').innerHTML = [...STORIES].sort((a, b) => b.reads - a.reads).slice(0, 4).map((a, i) =>
   `<li><a href="story.html?id=${a.id}"><b>${String(i + 1).padStart(2, '0')}</b><span class="cat">${a.cat}</span><strong>${a.title}</strong></a></li>`).join('');
 
 // header hides on scroll down, progress bar follows the page
