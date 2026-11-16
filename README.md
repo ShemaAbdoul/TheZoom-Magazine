@@ -1,53 +1,97 @@
-# The Zoom Magazine
+# TheZoom Magazine
 
-An independent magazine website built with plain HTML, CSS and JavaScript. Close-ups on tech, business, culture and sport.
+TheZoom is a static HTML, CSS and JavaScript magazine website, published with GitHub Pages.
 
-**Live site:** open *Settings, then Pages, then Visit site* in this repository.
+## Folder structure
 
-## What is in this repository
+```text
+TheZoom-Magazine/
+├── index.html                 # Homepage
+├── story.html                 # Full story template
+├── stories.js                 # Edit and add editorial stories
+├── meet.html                  # Meet people page
+├── person.html                # Full Meet article template
+├── meet.js                    # Edit interviews, profiles, poems and reviews
+├── magazine.html              # Magazine editions page
+├── magazine.js                # Edition details and checkout links
+├── about.html                 # About and contact page
+├── config.js                  # Contact email and newsletter settings
+├── style.css                  # Website design
+├── script.js                  # Homepage behaviour
+├── story.js                   # Story article behaviour
+├── theme.js                   # Light/dark mode
+├── assets/
+│   ├── images/
+│   │   ├── posts/             # Large story/article images
+│   │   ├── thumbs/            # Story-card thumbnails
+│   │   ├── meet/              # Meet portraits and feature photos
+│   │   └── magazine/covers/   # Magazine cover images
+│   └── magazine/              # Keep paid PDF master files outside this public repository
+└── README.md
+```
 
-| File or folder | What it is |
-|---|---|
-| `index.html` | Home page: zoom headline, latest stories, most read, newsletter |
-| `story.html` + `story.js` | The page that shows one full story, with a subscribe pop-up as readers scroll |
-| `issues.html` + `issues.js` | The magazine page: latest issue and past issues, read online, buy digital or print |
-| `meet.html` + `person.html` | The Meet page and the full page for each person |
-| `meet.js` | **All the Meet articles** (edit the author, text and pictures here) |
-| `about.html` | About page and contact form |
-| `stories.js` | **All the stories** (edit this to change, add or remove stories) |
-| `config.js` | Your email address and subscribe settings |
-| `style.css`, `theme.js`, `script.js` | Design, dark mode switch and home page behaviour |
-| `images/` | Story pictures (`story-1.jpg` ...) and issue covers (`issue-01.jpg` ...) |
-| `issues/` | The issue PDFs (`issue-01.pdf` ...) |
+## Editing content
 
-## How to edit (on GitHub, no software needed)
-
-1. Open the file, click the **pencil** icon, make your change, then click **Commit changes**.
-2. Wait 1 to 2 minutes for the green tick next to the deployment, then refresh the site with `Ctrl` + `Shift` + `R`.
+Edit directly on GitHub: open the file, click the pencil icon, make changes, then choose **Commit changes**. Wait for GitHub Pages to finish deploying and refresh with `Ctrl + Shift + R`.
 
 ### Stories
-Open `stories.js`. Each story is one block. Change the `title`, `dek` (the short summary), `author`, `date`, `mins` and the `body` text. Add a story by copying a block, giving it a new `id`, and adding a comma after the block above it. Delete a story by deleting its whole block.
+Open `stories.js`. Each object inside `STORIES` is one article. Edit:
+- `title`: headline
+- `dek`: short introduction
+- `author`: writer's byline
+- `date`: publication date in `YYYY-MM-DD`
+- `cat`: topic
+- `body`: paragraphs, headings (`## Heading`) and pull quotes (`> Quote`)
+- `img`: full-size image in `assets/images/posts/`
+- `thumb`: card thumbnail in `assets/images/thumbs/`
 
-### Pictures
-- **Story thumbnail and top picture:** save a picture as `images/story-1.jpg` (same number as the story `id`). Best size: 1600 x 900 pixels, under 300 KB.
-- **Issue covers:** `images/issue-07.jpg`. Best size: 800 x 1067 pixels.
-- To replace a picture, upload a new file with the **same name** into the same folder.
+Use a unique numeric `id`. For a new story with ID 8, add `story-08.jpg` to both `posts` and `thumbs`, then set the paths in the new object. Recommended image size: 1600 × 900 px, compressed for the web.
 
-### Meet page
-Open `meet.js`. Each block is one article. Change `author` to credit the writer (for example a guest who sent it by email), `cat` to Interview, Profile, Poem, Review or Article, and the `body` text. Pictures are `images/meet-1.jpg` and so on. For poems, end each line with `<br>`.
+### Meet
+Open `meet.js`. Each object is one interview, profile, poem, review or article. Edit `title`, `role`, `cat`, `author`, `dek`, `date` and `body`. The homepage Meet teaser and the Meet page both use this file. Put the matching image in `assets/images/meet/`, for example `meet-05.jpg`.
 
-The Meet strip on the home page shows the same people, so editing `meet.js` updates both.
+### About
+Open `about.html` and edit the paragraphs and contact information. The email address used by the contact form is set in `config.js`.
 
-### About page
-Open `about.html` and edit the text between the tags, for example the paragraph under *About The Zoom*.
+### Magazine editions
+Open `magazine.js`. Each object in `EDITIONS` controls an edition's number, date, title, page count, reading availability, price and payment link.
+- Cover images: `assets/images/magazine/covers/issue-01.jpg`
+- Paid PDF master files: keep them in private storage, not in this public repository.
+- Use matching two-digit numbers for covers, such as `issue-08.jpg`. Keep the paid `issue-08.pdf` master in private storage.
 
-### Issues, prices and dates
-Open `issues.js`. The top of the file lists each issue: title, month, pages, prices (`dp` digital, `pp` print) and the next issue date. To add a payment link, paste it into `du` (digital) or `pu` (print).
+Do not upload paid PDFs to a public GitHub repository. Anyone can download files stored there. The paid editions are not readable directly on the public website; they are emailed manually after payment verification.
 
-### Email and subscribers
-Open `config.js`. Change `email` to your address. To collect subscribers automatically, create a free form at a service such as Formspree and paste its address into `subscribeUrl`.
+## Digital payments: Visa and MTN Mobile Money
 
-## Publishing and hosting
-The site is published with GitHub Pages (Settings, then Pages). Every time you commit a change, the site updates in 1 to 2 minutes.
+The magazine page is prepared for Flutterwave hosted Payment Links. Each digital edition is priced at **RWF 10,000**. Delivery is manual by email after you verify the transaction. The checkout is **not live** until you create and add a separate fixed-price link for each edition.
 
-**Your own web address (optional):** buy a domain from a registrar, then in *Settings, then Pages, then Custom domain* enter it and follow the DNS steps GitHub shows. Tick *Enforce HTTPS* once it is available.
+The current recommended option is Flutterwave because its Rwanda payment documentation lists card payments and Rwanda Mobile Money, including MTN and Airtel. See:
+- https://flutterwave.com/rw/support/payment-methods/pay-with-mobile-money
+- https://developer.flutterwave.com/docs/payment-methods
+- https://flutterwave.com/rw/pricing/
+
+Setup:
+1. Register and complete merchant verification with Flutterwave.
+2. In the Flutterwave dashboard, enable **Card** and **Mobile Money** under payment methods. Disable any other methods if you want checkout to offer only those two categories.
+3. Create seven one-time Payment Links, one per edition, each fixed at **RWF 10,000**.
+4. Enable Card and Rwanda Mobile Money. Flutterwave lists MTN and Airtel for Rwanda; ask Flutterwave if you need MTN to be the only mobile-money network.
+5. Collect the buyer email and enable merchant payment notifications.
+6. Copy each hosted payment URL into the matching edition's `checkoutUrl` field in `magazine.js`. Prices are already set to RWF 10,000.
+7. Test in the provider's test mode before publishing live links.
+
+Never put a Flutterwave secret key or private API key in this public repository. Hosted payment links keep card details and Mobile Money authorization on the provider's secure checkout page. The current static GitHub Pages site does not automatically verify payments or deliver paid PDFs: after checking a successful RWF 10,000 transaction in your Flutterwave dashboard, send the edition to the buyer by email. A private order log should record the buyer, edition, transaction reference and delivery status. For automatic payment verification and download delivery, the site will need a secure backend/webhook and private file storage. Do not leave paid PDFs in this public repository. This updated project ZIP deliberately excludes all PDF files.
+
+## Footer and navigation
+
+The footer is intentionally minimal: `© [current year] TheZoom Magazine`. The year updates automatically. The main menu uses **Magazine** for the editions page.
+
+## Publishing
+
+The repository is published through GitHub Pages. Each commit triggers a deployment. To use a custom domain, open repository **Settings → Pages → Custom domain** and follow GitHub's DNS instructions.
+
+
+See [PAYMENTS-SETUP.md](PAYMENTS-SETUP.md) for the complete payment-link and manual-delivery checklist. If the old PDFs were previously uploaded to GitHub, delete the repository's old root `issues/` folder and any `assets/magazine/pdfs/` folder, then commit the deletions.
+
+
+## Digital purchases
+The Magazine page currently displays disabled “Coming soon” buttons. No payment is collected and no checkout is active. When you are ready to sell editions, configure a verified payment provider and secure manual-order workflow before enabling purchases. Keep paid PDFs outside this public repository.

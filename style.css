@@ -204,3 +204,7 @@ label{font:600 15px var(--head)}
 .mp span{font:700 12px var(--head);letter-spacing:.06em;text-transform:uppercase;color:var(--blue)}
 .mp strong{font:800 24px/1.1 var(--head);letter-spacing:-.02em}
 .mp:hover strong{color:var(--blue)}
+
+#checkout:disabled{opacity:.45;cursor:not-allowed}
+
+.btn:disabled{opacity:.55;cursor:not-allowed;pointer-events:none;filter:grayscale(.2)}

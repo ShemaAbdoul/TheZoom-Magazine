@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Magazine | TheZoom Magazine</title>
+<meta name="description" content="Browse TheZoom Magazine digital editions. Digital editions will be available to purchase soon.">
+<meta name="theme-color" content="#2540ff">
+<script src="theme.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Newsreader:opsz,wght@6..72,400..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="logo" href="index.html" aria-label="The Zoom Magazine, home">The Z<span class="o"></span><span class="o"></span>m</a>
+  <nav><a href="index.html#stories">Stories</a><a href="meet.html">Meet</a><a href="magazine.html" aria-current="page">Magazine</a><a href="about.html">About</a><button class="theme" id="theme" role="switch" aria-checked="false" aria-label="Dark mode"></button></nav>
+</header>
+
+<main>
+  <section class="wrap latest" id="latest"></section>
+  <section class="wrap" id="archive">
+    <h2>Previous editions</h2>
+    <p class="imeta">Read online or buy a digital edition.</p>
+    <div class="shelf" id="shelf"></div>
+  </section>
+</main>
+
+<footer class="wrap"><span>&copy; <span id="year">2026</span> TheZoom Magazine</span></footer>
+
+<dialog id="viewer" aria-labelledby="vt">
+  <div class="vbar"><span id="vt"></span><span><a class="btn" id="vo" target="_blank" rel="noopener">Open in new tab</a><button class="btn" id="vc">Close</button></span></div>
+  <iframe id="vf" title="Magazine reader"></iframe>
+</dialog>
+
+<script src="config.js"></script>
+<script src="magazine.js"></script>
+</body>
+</html>

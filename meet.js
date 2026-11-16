@@ -11,7 +11,7 @@ const MEET = [
     id: 1, cat: 'Interview', role: 'Photographer', title: 'Meet David',
     dek: 'The photographer who looks for the quiet moment just before the shutter clicks.',
     author: 'The Zoom Team', date: '2026-10-22', mins: 6,
-    img: 'images/meet-1.jpg', alt: 'David, photographer', colors: ['#2540ff', '#0b1426', '#ffd23f'],
+    img: 'assets/images/meet/meet-01.jpg', alt: 'David, photographer', colors: ['#2540ff', '#0b1426', '#ffd23f'],
     body: [
       'David picked up a camera as a teenager and has rarely put it down since. We caught up with him between shoots to talk about light, patience and learning to ask before you press the button.',
       '## How did you start?',
@@ -27,7 +27,7 @@ const MEET = [
     id: 2, cat: 'Profile', role: 'Dancer', title: 'Meet Ibrah',
     dek: 'A dancer who turns a crowded street corner into a stage.',
     author: 'The Zoom Team', date: '2026-10-19', mins: 4,
-    img: 'images/meet-2.jpg', alt: 'Ibrah, dancer', colors: ['#ff3d7f', '#7a1f5c', '#ffd23f'],
+    img: 'assets/images/meet/meet-02.jpg', alt: 'Ibrah, dancer', colors: ['#ff3d7f', '#7a1f5c', '#ffd23f'],
     body: [
       'Ibrah does not wait for a theatre. A speaker, a patch of pavement and a few curious onlookers are enough to begin.',
       '## Movement first',
@@ -41,7 +41,7 @@ const MEET = [
     id: 3, cat: 'Poem', role: 'Poet', title: 'Meet Amara',
     dek: 'A new poem about mornings, memory and the sound of the street.',
     author: 'Amara N. (sent in by email)', date: '2026-10-16', mins: 2,
-    img: 'images/meet-3.jpg', alt: 'Amara, poet', colors: ['#8f3bff', '#12102b', '#2de2c4'],
+    img: 'assets/images/meet/meet-03.jpg', alt: 'Amara, poet', colors: ['#8f3bff', '#12102b', '#2de2c4'],
     body: [
       '## Morning Reel',
       'The kettle clears its throat at six,<br>the street unfolds its paper wings,<br>somewhere a radio remembers<br>all the songs my mother sings.',
@@ -53,7 +53,7 @@ const MEET = [
     id: 4, cat: 'Review', role: 'Painter', title: 'Meet Grace',
     dek: 'A review of “Small Rooms, Big Light”, a new exhibition of paintings made at home.',
     author: 'Guest reviewer', date: '2026-10-13', mins: 3,
-    img: 'images/meet-4.jpg', alt: 'Grace, painter', colors: ['#1fbf75', '#0b3d2e', '#ffd23f'],
+    img: 'assets/images/meet/meet-04.jpg', alt: 'Grace, painter', colors: ['#1fbf75', '#0b3d2e', '#ffd23f'],
     body: [
       'Grace paints the rooms most of us walk through without looking: a kitchen window, a stack of folded cloth, a chair left in the afternoon sun.',
       '## What works',

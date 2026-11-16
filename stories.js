@@ -12,7 +12,7 @@ const STORIES = [
     id: 1, cat: 'Tech', title: 'The city that taught itself to code',
     dek: 'Study groups, shared laptops and weekend hackathons are turning curious beginners into builders.',
     author: 'The Zoom Team', date: '2026-10-20', mins: 6, reads: 980,
-    img: 'images/story-1.jpg', alt: 'Learners sharing laptops at a weekend coding meetup', colors: ['#2540ff', '#0b1426', '#ffd23f'],
+    img: 'assets/images/posts/story-01.jpg', thumb: 'assets/images/thumbs/story-01.jpg', alt: 'Learners sharing laptops at a weekend coding meetup', colors: ['#2540ff', '#0b1426', '#ffd23f'],
     body: [
       'It starts in a borrowed room with a single power strip. Ten people, three laptops and one very patient mentor gather every Saturday, and nobody leaves until the first page loads.',
       '## From first lines to first users',
@@ -25,7 +25,7 @@ const STORIES = [
     id: 2, cat: 'Business', title: 'Small shops, big ambitions',
     dek: 'Neighbourhood sellers are using phones, good photos and word of mouth to reach customers far from home.',
     author: 'The Zoom Team', date: '2026-10-18', mins: 5, reads: 640,
-    img: 'images/story-2.jpg', alt: 'A shop owner photographing products to sell online', colors: ['#ff7a59', '#7a1f5c', '#ffd23f'],
+    img: 'assets/images/posts/story-02.jpg', thumb: 'assets/images/thumbs/story-02.jpg', alt: 'A shop owner photographing products to sell online', colors: ['#ff7a59', '#7a1f5c', '#ffd23f'],
     body: [
       'A clear photo and a fast reply do more than a big budget. That is the first lesson most new online sellers learn, usually after losing a sale to a blurry picture.',
       '## Trust is the product',
@@ -37,7 +37,7 @@ const STORIES = [
     id: 3, cat: 'Culture', title: 'Murals, markets and a skyline in motion',
     dek: 'A walk through the places where the city shows its colour after dark.',
     author: 'The Zoom Team', date: '2026-10-15', mins: 4, reads: 410,
-    img: 'images/story-3.jpg', alt: 'A colourful street mural at dusk', colors: ['#8f3bff', '#12102b', '#ff3d7f'],
+    img: 'assets/images/posts/story-03.jpg', thumb: 'assets/images/thumbs/story-03.jpg', alt: 'A colourful street mural at dusk', colors: ['#8f3bff', '#12102b', '#ff3d7f'],
     body: [
       'Evening is when the streets change character. Lights come on, stalls open and the music gets louder, one speaker at a time.',
       '## Follow the colour',
@@ -50,7 +50,7 @@ const STORIES = [
     id: 4, cat: 'Sport', title: 'Every weekend pitch is a talent pipeline',
     dek: 'Local leagues, school teams and neighbourhood coaches are shaping the next generation of players.',
     author: 'The Zoom Team', date: '2026-10-12', mins: 5, reads: 520,
-    img: 'images/story-4.jpg', alt: 'Young players on a neighbourhood football pitch', colors: ['#1fbf75', '#0b3d2e', '#ffd23f'],
+    img: 'assets/images/posts/story-04.jpg', thumb: 'assets/images/thumbs/story-04.jpg', alt: 'Young players on a neighbourhood football pitch', colors: ['#1fbf75', '#0b3d2e', '#ffd23f'],
     body: [
       'The best scouts rarely sit in stadiums. They stand on the touchline of a muddy pitch on a Saturday morning, notebook in hand.',
       '## Coaches make the difference',
@@ -62,7 +62,7 @@ const STORIES = [
     id: 5, cat: 'Tech', title: 'Pocket-sized money: how mobile payments changed daily life',
     dek: 'From market stalls to taxi rides, paying with a phone has become the quiet default.',
     author: 'The Zoom Team', date: '2026-10-09', mins: 4, reads: 870,
-    img: 'images/story-5.jpg', alt: 'Paying with a phone at a market stall', colors: ['#2de2c4', '#0b1426', '#2540ff'],
+    img: 'assets/images/posts/story-05.jpg', thumb: 'assets/images/thumbs/story-05.jpg', alt: 'Paying with a phone at a market stall', colors: ['#2de2c4', '#0b1426', '#2540ff'],
     body: [
       'Paying with a phone is faster than counting change, and it leaves a record that makes budgeting easier. For many people it quietly became the default.',
       '## A record of every sale',
@@ -74,7 +74,7 @@ const STORIES = [
     id: 6, cat: 'Culture', title: 'Playlists that sound like the city at dawn',
     dek: 'Six moods, six soundtracks, and the early-morning routines that go with them.',
     author: 'The Zoom Team', date: '2026-10-05', mins: 3, reads: 300,
-    img: 'images/story-6.jpg', alt: 'Headphones and a mug by a window at sunrise', colors: ['#ffd23f', '#ff7a59', '#2540ff'],
+    img: 'assets/images/posts/story-06.jpg', thumb: 'assets/images/thumbs/story-06.jpg', alt: 'Headphones and a mug by a window at sunrise', colors: ['#ffd23f', '#ff7a59', '#2540ff'],
     body: [
       'Mornings have their own sound: a kettle, a radio, a street waking up slowly.',
       '## Six moods, six playlists',
@@ -86,7 +86,7 @@ const STORIES = [
     id: 7, cat: 'Business', title: 'The freelancer’s guide to getting paid on time',
     dek: 'Clear terms, friendly reminders and a simple invoice go a long way.',
     author: 'The Zoom Team', date: '2026-10-01', mins: 5, reads: 720,
-    img: 'images/story-7.jpg', alt: 'A freelancer at a laptop with an invoice', colors: ['#0b1426', '#2540ff', '#2de2c4'],
+    img: 'assets/images/posts/story-07.jpg', thumb: 'assets/images/thumbs/story-07.jpg', alt: 'A freelancer at a laptop with an invoice', colors: ['#0b1426', '#2540ff', '#2de2c4'],
     body: [
       'Most late payments start with a vague agreement. Fix that first and the rest gets easier.',
       '## Before the work starts',
@@ -98,8 +98,8 @@ const STORIES = [
 ];
 
 // ---- You don't need to edit anything below this line ----
-const photoTag = a => `<img src="${a.img}" alt="${a.alt}" loading="lazy" onerror="this.remove()">`;
+const photoTag = (a, thumb = false) => `<img src="${thumb && a.thumb ? a.thumb : a.img}" alt="${a.alt}" loading="lazy" onerror="this.remove()">`;
 const storyCard = (a, feat, base = 'story.html') =>
-  `<article class="card${feat ? ' feat' : ''}"><div class="art" style="--a:${a.colors[0]};--b:${a.colors[1]};--c:${a.colors[2]}"><i></i>${photoTag(a)}</div>` +
+  `<article class="card${feat ? ' feat' : ''}"><div class="art" style="--a:${a.colors[0]};--b:${a.colors[1]};--c:${a.colors[2]}"><i></i>${photoTag(a, true)}</div>` +
   `<div class="meta"><span class="cat">${a.cat}</span><span>${a.mins} min read</span></div>` +
   `<h3><a href="${base}?id=${a.id}">${a.title}</a></h3><p>${a.dek}</p></article>`;
