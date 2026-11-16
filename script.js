@@ -26,6 +26,11 @@ addEventListener('keydown', e => {
 $('#mostread').innerHTML = [...STORIES].sort((a, b) => b.reads - a.reads).slice(0, 4).map((a, i) =>
   `<li><a href="story.html?id=${a.id}"><b>${String(i + 1).padStart(2, '0')}</b><span class="cat">${a.cat}</span><strong>${a.title}</strong></a></li>`).join('');
 
+// meet teaser: the people listed in meet.js (rectangular pictures)
+$('#meetrow').innerHTML = MEET.map(p =>
+  `<a class="mp" href="person.html?id=${p.id}"><div class="art tile" style="--a:${p.colors[0]};--b:${p.colors[1]};--c:${p.colors[2]}"><i></i>${photoTag(p)}</div>` +
+  `<span>${p.role}</span><strong>${p.title}</strong></a>`).join('');
+
 // header hides on scroll down, progress bar follows the page
 const head = $('#head'), bar = $('#bar');
 let lastY = 0;

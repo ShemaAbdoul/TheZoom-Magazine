@@ -36,6 +36,8 @@ Open `stories.js`. Each story is one block. Change the `title`, `dek` (the short
 ### Meet page
 Open `meet.js`. Each block is one article. Change `author` to credit the writer (for example a guest who sent it by email), `cat` to Interview, Profile, Poem, Review or Article, and the `body` text. Pictures are `images/meet-1.jpg` and so on. For poems, end each line with `<br>`.
 
+The Meet strip on the home page shows the same people, so editing `meet.js` updates both.
+
 ### About page
 Open `about.html` and edit the text between the tags, for example the paragraph under *About The Zoom*.
 
@@ -44,3 +46,8 @@ Open `issues.js`. The top of the file lists each issue: title, month, pages, pri
 
 ### Email and subscribers
 Open `config.js`. Change `email` to your address. To collect subscribers automatically, create a free form at a service such as Formspree and paste its address into `subscribeUrl`.
+
+## Publishing and hosting
+The site is published with GitHub Pages (Settings, then Pages). Every time you commit a change, the site updates in 1 to 2 minutes.
+
+**Your own web address (optional):** buy a domain from a registrar, then in *Settings, then Pages, then Custom domain* enter it and follow the DNS steps GitHub shows. Tick *Enforce HTTPS* once it is available.
