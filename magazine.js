@@ -3,7 +3,7 @@
 // BUY PRINT + DOWNLOAD remains disabled until ordering is officially launched.
 const NEXT = '2026-12-20';
 const EDITIONS = [
-  { n: 7, date: 'October 2020', title: 'Game changer', pages: 37, online: true, blurb: 'This issue is all about Representation! Featuring Peace Haje, Kazi and Roger Jean Nsengiyumva.' },
+  { n: 7, date: 'October 2020', title: 'The Close-Up Issue', pages: 37, online: true, blurb: 'This issue is all about representation featuring Peace Haje, Kazi and Roger Jean Nsengiyumva.' },
   { n: 6, date: 'September 2019', title: 'Mode Fashion', pages: 41, online: true },
   { n: 5, date: 'August 2019', title: 'Made With Love', pages: 45, online: true },
   { n: 4, date: 'July 2018', title: 'Dream Big', pages: 37, online: true },
