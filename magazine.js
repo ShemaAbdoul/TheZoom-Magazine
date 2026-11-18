@@ -3,13 +3,13 @@
 // BUY PRINT + DOWNLOAD remains disabled until ordering is officially launched.
 const NEXT = '2026-12-20';
 const EDITIONS = [
-  { n: 7, date: 'October 2020', title: 'Issue 7', pages: 37, online: true, blurb: 'This issue is all about Representation! Featuring Peace Haje, Kazi and Roger Jean Nsengiyumva.' },
+  { n: 7, date: 'October 2020', title: 'Game changer', pages: 37, online: true, blurb: 'This issue is all about Representation! Featuring Peace Haje, Kazi and Roger Jean Nsengiyumva.' },
   { n: 6, date: 'September 2019', title: 'Mode Fashion', pages: 41, online: true },
-  { n: 5, date: 'August 2019', title: 'Issue 5', pages: 45, online: true },
+  { n: 5, date: 'August 2019', title: 'Made With Love', pages: 45, online: true },
   { n: 4, date: 'July 2018', title: 'Dream Big', pages: 37, online: true },
   { n: 3, date: 'June 2018', title: 'The Drive', pages: 35, online: true },
   { n: 2, date: 'May 2017', title: 'Shoot & Shout', pages: 13, online: true },
-  { n: 1, date: 'April 2016', title: 'Issue 1', pages: 29, online: true }
+  { n: 1, date: 'April 2016', title: 'First Look', pages: 29, online: true }
 ];
 
 const $ = id => document.getElementById(id);
@@ -17,7 +17,7 @@ const pad = n => String(n).padStart(2, '0');
 const pdf = i => 'assets/magazine/pdfs/issue-' + pad(i.n) + '.pdf';
 const cover = i => `<div class="cover"><img src="assets/images/magazine/covers/issue-${pad(i.n)}.jpg" alt="Cover of Magazine ${pad(i.n)}: ${i.title}" loading="lazy" onerror="this.remove()"></div>`;
 const read = i => i.online ? `<button class="btn primary" type="button" data-read="${i.n}">Read now</button>` : '';
-const buyComingSoon = () => `<button class="btn" type="button" disabled aria-disabled="true" title="Print and PDF orders are coming soon">Buy print<span class="soon-label">· Coming soon</span></button>`;
+const buyComingSoon = () => `<button class="btn" type="button" disabled aria-disabled="true" title="Print and PDF orders are coming soon">Buy print <span class="soon-label">· Coming soon</span></button>`;
 
 const latest = EDITIONS[0];
 $('latest').innerHTML = cover(latest) + `<div><span class="badge">Latest edition</span><h1>${latest.title}</h1>` +
