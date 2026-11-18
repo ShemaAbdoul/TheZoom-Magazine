@@ -58,7 +58,7 @@ const MEET = [
       "Yes, my elder cousin and my older friends who live in South Africa. I always wanted to dress like my cousin because he was cool and all the girls wanted to hang out with him. The hip hop world influenced me a lot too.",
       "## What are some of your fashion essentials?",
       "Sneakers, flashy chains.",
-      "## How do you manage your time?,"
+      "## How do you manage your time?",
       "In my free time, I either go shopping with my homies, or we just chill and double up on ideas. I love hanging out with the guys I really vibe with, playing games and having fun. I also make time for my mom and little sisters, taking them out and spending quality time with them because I live for them.",
       "## How would you describe your style?",
       "My style? It’s expensive and hard.",
