@@ -13,7 +13,7 @@ TheZoom-Magazine/
 ├── person.html                # Full Meet article template
 ├── meet.js                    # Edit interviews, profiles, poems and reviews
 ├── magazine.html              # Magazine editions page
-├── magazine.js                # Edition details and checkout links
+├── magazine.js                # Edition details, online reader and Coming Soon button
 ├── about.html                 # About and contact page
 ├── config.js                  # Contact email and newsletter settings
 ├── style.css                  # Website design
@@ -26,7 +26,7 @@ TheZoom-Magazine/
 │   │   ├── thumbs/            # Story-card thumbnails
 │   │   ├── meet/              # Meet portraits and feature photos
 │   │   └── magazine/covers/   # Magazine cover images
-│   └── magazine/              # Keep paid PDF master files outside this public repository
+│   └── magazine/pdfs/         # Digital magazine PDF files
 └── README.md
 ```
 
@@ -54,32 +54,18 @@ Open `meet.js`. Each object is one interview, profile, poem, review or article. 
 Open `about.html` and edit the paragraphs and contact information. The email address used by the contact form is set in `config.js`.
 
 ### Magazine editions
-Open `magazine.js`. Each object in `EDITIONS` controls an edition's number, date, title, page count, reading availability, price and payment link.
+Open `magazine.js`. Each object in `EDITIONS` controls an edition's number, date, title, page count and online reading availability.
 - Cover images: `assets/images/magazine/covers/issue-01.jpg`
-- Paid PDF master files: keep them in private storage, not in this public repository.
-- Use matching two-digit numbers for covers, such as `issue-08.jpg`. Keep the paid `issue-08.pdf` master in private storage.
+- PDF files: `assets/magazine/pdfs/issue-01.pdf`
+- Use matching two-digit numbers, such as `issue-08.jpg` and `issue-08.pdf`.
 
-Do not upload paid PDFs to a public GitHub repository. Anyone can download files stored there. The paid editions are not readable directly on the public website; they are emailed manually after payment verification.
+The current seven PDF editions are included in `assets/magazine/pdfs/` so readers can open them with **Read now**. These PDFs are publicly accessible: readers can also use their browser PDF controls or the direct file URL to save a copy. Only include editions you are comfortable making public. Keep future paid-only PDFs in private storage, not in this public repository.
 
-## Digital payments: Visa and MTN Mobile Money
+## Print + PDF orders (Coming soon)
 
-The magazine page is prepared for Flutterwave hosted Payment Links. Each digital edition is priced at **RWF 10,000**. Delivery is manual by email after you verify the transaction. The checkout is **not live** until you create and add a separate fixed-price link for each edition.
+The **Buy print + download** button is intentionally disabled and labelled **Coming soon**. No payment is collected and no checkout is active. When TheZoom is ready to sell print copies and PDF editions, configure a secure payment provider and an order/delivery process before enabling the button. Flutterwave can be evaluated for Visa/card and Rwanda Mobile Money (including MTN), but no credentials or payment links are currently connected.
 
-The current recommended option is Flutterwave because its Rwanda payment documentation lists card payments and Rwanda Mobile Money, including MTN and Airtel. See:
-- https://flutterwave.com/rw/support/payment-methods/pay-with-mobile-money
-- https://developer.flutterwave.com/docs/payment-methods
-- https://flutterwave.com/rw/pricing/
-
-Setup:
-1. Register and complete merchant verification with Flutterwave.
-2. In the Flutterwave dashboard, enable **Card** and **Mobile Money** under payment methods. Disable any other methods if you want checkout to offer only those two categories.
-3. Create seven one-time Payment Links, one per edition, each fixed at **RWF 10,000**.
-4. Enable Card and Rwanda Mobile Money. Flutterwave lists MTN and Airtel for Rwanda; ask Flutterwave if you need MTN to be the only mobile-money network.
-5. Collect the buyer email and enable merchant payment notifications.
-6. Copy each hosted payment URL into the matching edition's `checkoutUrl` field in `magazine.js`. Prices are already set to RWF 10,000.
-7. Test in the provider's test mode before publishing live links.
-
-Never put a Flutterwave secret key or private API key in this public repository. Hosted payment links keep card details and Mobile Money authorization on the provider's secure checkout page. The current static GitHub Pages site does not automatically verify payments or deliver paid PDFs: after checking a successful RWF 10,000 transaction in your Flutterwave dashboard, send the edition to the buyer by email. A private order log should record the buyer, edition, transaction reference and delivery status. For automatic payment verification and download delivery, the site will need a secure backend/webhook and private file storage. Do not leave paid PDFs in this public repository. This updated project ZIP deliberately excludes all PDF files.
+Do not put secret payment keys in this public repository. For future paid-only PDFs, use private file storage and a secure backend; a static GitHub Pages site cannot verify payments or protect files stored in a public repository.
 
 ## Footer and navigation
 
@@ -88,10 +74,3 @@ The footer is intentionally minimal: `© [current year] TheZoom Magazine`. The y
 ## Publishing
 
 The repository is published through GitHub Pages. Each commit triggers a deployment. To use a custom domain, open repository **Settings → Pages → Custom domain** and follow GitHub's DNS instructions.
-
-
-See [PAYMENTS-SETUP.md](PAYMENTS-SETUP.md) for the complete payment-link and manual-delivery checklist. If the old PDFs were previously uploaded to GitHub, delete the repository's old root `issues/` folder and any `assets/magazine/pdfs/` folder, then commit the deletions.
-
-
-## Digital purchases
-The Magazine page currently displays disabled “Coming soon” buttons. No payment is collected and no checkout is active. When you are ready to sell editions, configure a verified payment provider and secure manual-order workflow before enabling purchases. Keep paid PDFs outside this public repository.

@@ -101,6 +101,9 @@ label{font:600 15px var(--head)}
 [hidden]{display:none!important}
 .btn{display:inline-block;font:700 16px var(--head);padding:12px 24px;border:1.5px solid var(--ink);border-radius:999px;background:transparent;color:var(--ink);text-decoration:none;cursor:pointer;transition:background .2s,color .2s}
 .btn:hover{background:var(--line)}
+.btn:disabled{opacity:.58;cursor:not-allowed}
+.btn:disabled:hover{background:transparent;color:var(--ink)}
+.soon-label{font-size:.82em;white-space:nowrap}
 .btn.primary{background:var(--ink);color:var(--paper)}
 .btn.primary:hover{background:var(--blue);border-color:var(--blue);color:#fff}
 .badge{display:inline-block;font:700 13px var(--head);background:var(--sun);color:#0b1426;padding:4px 12px;border-radius:999px}
@@ -206,5 +209,3 @@ label{font:600 15px var(--head)}
 .mp:hover strong{color:var(--blue)}
 
 #checkout:disabled{opacity:.45;cursor:not-allowed}
-
-.btn:disabled{opacity:.55;cursor:not-allowed;pointer-events:none;filter:grayscale(.2)}
