@@ -111,7 +111,7 @@ const MEET = [
       "## Do you have a record you always return to?",
       "Yes! Kingdom by Ben Howard. I love this man’s voice, and anyone who knows me knows that I’m unashamed of my obsession with him!",
       "## Where can we find Wander in Wonder?",
-      "Everywhere! You can find it on all major streaming platforms where you listen to music legally to support artists. 🙂 You can stream “Wander in Wonder“ here at jenniferkamikazi.com."
+      "Everywhere! You can find it on all major streaming platforms where you listen to music legally to support artists. You can stream Wander in Wonder here at jenniferkamikazi.com."
       
     ]
   }
