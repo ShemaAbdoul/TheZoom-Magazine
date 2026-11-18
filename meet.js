@@ -8,12 +8,12 @@
 //           For poems, end each line with <br> so the line breaks show.
 const MEET = [
   {
-    id: 1, cat: 'Interview', role: 'Photographer', title: 'Meet Christella',
+    id: 1, cat: 'Interview', role: 'Illustrator', title: 'Meet Christella',
     dek: 'She is a self-employed illustrator from Rwanda. Known for her striking depictions of black women.',
     author: 'The Zoom Team', date: '2026-10-22', mins: 6,
     img: 'assets/images/meet/meet-01.jpg', alt: 'Bijou, Illustrator', colors: ['#2540ff', '#0b1426', '#ffd23f'],
     body: [
-      'Christella Bijou is a self-employed illustrator from Rwanda. Known for her striking depictions of black women, Bijou's work radiates a sense of regality and serenity. In this interview, we dive into her creative journey, process, and what inspires her artistry.',
+      'Christella Bijou is a self-employed illustrator from Rwanda. Known for her striking depictions of Black women, Bijou's work radiates regality and serenity. In this interview, we dive into her creative journey, process, and what inspires her artistry.',
       '## Tell us about yourself. What makes you tick?',
       'I'm a female digital illustrator and self-employed. I consider myself an old soul with little interest in anything mainstream. I find comfort in discomfort and enjoy discovering hidden beauty in the smallest things.',
       '## What kind of illustration do you focus on?',
@@ -21,7 +21,7 @@ const MEET = [
       '## How did you get started as an illustrator?',
       'I've been drawing since I was about 5 years old, but I became serious about illustration around the age of 23. That's when I really started practicing and learning as much as I could to improve my skills.',
       '## How did you develop your style? Has it changed over time?',
-      'I had a clear vision of what I wanted to achieve from the very beginning, but it took a lot of trial and error to express that vision. My style has definitely evolved through experimenting with different techniques and mediums. Right now, I feel like I've found a comfortable style, but who knows where future experimentation will take me?.',
+      'I had a clear vision of what I wanted to achieve from the very beginning, but it took a lot of trial and error to express that vision. My style has definitely evolved as I've experimented with different techniques and media. Right now, I feel like I've found a comfortable style, but who knows where future experimentation will take me?.',
       '## Can you briefly explain your creative process?',
       'I primarily work with Adobe Illustrator. My process isn't particularly complex. I keep a file of everything that inspires me, and when I begin a new project, I look through that file to find elements that match my current mood.',
       '## How do you come up with new ideas? Do you have a process for that?',
@@ -30,9 +30,7 @@ const MEET = [
       'Absolutely. But I don’t view creative slumps negatively. I see them as a signal that my mind needs rest. When that happens, I shift my focus to something else. Pinterest is a great resource for sparking creativity, and I highly recommend it!',
       '## Is illustration a passion or a hobby for you?',
       'It's both my passion and profession.',
-        
       '> Staying relevant. The creative world moves fast, and it's a challenge to keep up.',
-      
       '## What’s the best part of your job?',
       'The most rewarding part is creating something that resonates with people. I don’t get too emotionally attached to the outcome of my work, so it’s always a pleasant surprise when people connect with it.',
       '## Do you have any side projects you're working on?',
