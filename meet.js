@@ -10,7 +10,7 @@ const MEET = [
   {
     id: 1, cat: 'Interview', role: 'Illustrator', title: 'Meet Christella',
     dek: 'She is a self-employed illustrator from Rwanda. Known for her striking depictions of black women.',
-    author: 'The Zoom Team', date: '2026-10-22', mins: 6,
+    author: 'TheZoom Team', date: '2026-10-22', mins: 6,
     img: 'assets/images/meet/meet-01.jpg', alt: 'Bijou, Illustrator', colors: ['#2540ff', '#0b1426', '#ffd23f'],
     body: [
       "Christella Bijou is a self-employed illustrator from Rwanda. Known for her striking depictions of Black women, Bijou's work radiates regality and serenity. In this interview, we dive into her creative journey, process, and what inspires her artistry.",
@@ -42,7 +42,7 @@ const MEET = [
   {
     id: 2, cat: 'Profile', role: 'Designer', title: 'Meet Jazil',
     dek: 'Though he left Rwanda at a young age, his dream of returning to make a lasting impact remains strong.',
-    author: 'The Zoom Team', date: '2026-10-19', mins: 4,
+    author: 'Abdoul Shema', date: '2026-10-19', mins: 4,
     img: 'assets/images/meet/meet-02.jpg', alt: 'Jazil, designer', colors: ['#ff3d7f', '#7a1f5c', '#ffd23f'],
     body: [
       "Manzi Jazil has always had a bold vision for his future. Though he left Rwanda at a young age, his dream of returning to make a lasting impact remains strong. From launching a global clothing brand to aspiring to own a football club in Rwanda, Jazil's story is one of ambition, passion, and determination.",
@@ -87,7 +87,7 @@ const MEET = [
   {
     id: 4, cat: 'Interview', role: 'Singer', title: 'Meet Kamikazi',
     dek: 'A London singer-songwriter carves a unique path in music.',
-    author: 'Guest reviewer', date: '2026-10-13', mins: 3,
+    author: 'Abdoul Shema', date: '2026-10-13', mins: 3,
     img: 'assets/images/meet/meet-04.jpg', alt: 'Grace, painter', colors: ['#1fbf75', '#0b3d2e', '#ffd23f'],
     body: [
       "Jennifer Kamikazi, a London-based singer and songwriter, is carving a unique path in the music world. With her captivating voice and soulful lyrics, Jennifer blends the influence of her Rwandan heritage with a love for folk music, creating songs that speak to the heart. Her journey, from studying biochemistry to discovering a passion for songwriting, is as inspiring as the music she creates. We had the pleasure of sitting down with Jennifer to talk about her new EP, Wander in Wonder, and her artistic journey. Let’s dive into her world!",
@@ -111,9 +111,8 @@ const MEET = [
       "## Do you have a record you always return to?",
       "Yes! Kingdom by Ben Howard. I love this man’s voice, and anyone who knows me knows that I’m unashamed of my obsession with him!",
       "## Where can we find Wander in Wonder?",
-      "Everywhere! You can find it on all major streaming platforms where you listen to music legally to support artists. 🙂 You can stream “Wander in Wonder“ here at jenniferkamikazi.com.",
+      "Everywhere! You can find it on all major streaming platforms where you listen to music legally to support artists. 🙂 You can stream “Wander in Wonder“ here at jenniferkamikazi.com."
       
-      '<strong>Verdict:</strong> 4 out of 5.'
     ]
   }
 ];
