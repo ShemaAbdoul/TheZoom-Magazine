@@ -49,16 +49,16 @@ const MEET = [
       "## Tell us more about yourself, Manzi!",
       "Well, my real name is Manzi. I’m 21 years old, born in Rwanda but haven’t been there in years. I grew up in Cape Town, South Africa, and now I’m living and studying in Belgium. Even though I left Rwanda at a young age, I’m proudly Rwandan. I have a vision of doing amazing things once I finish my studies.",
       "## When did you leave Rwanda?",
-      "I left Rwanda in 2004. I was living in Kigali, specifically in Igikondo."
+      "I left Rwanda in 2004. I was living in Kigali, specifically in Igikondo.",
       "## What do you do?",
-      "I’ve been doing graphic design for about four years now, and I’ll be finishing my studies soon. I also have a clothing line dropping next year—my first big long-term goal is to take it worldwide."
+      "I’ve been doing graphic design for about four years now, and I’ll be finishing my studies soon. I also have a clothing line dropping next year—my first big long-term goal is to take it worldwide.",
       "## How did your love for fashion come to be?",
       "I’m a huge fan of hip hop, especially trap music. I got inspired by my favorite trap artists—the way they dress, how they shine from head to toe. When I was younger, I couldn’t afford the designer clothes they wore, but I loved it. Now that I’m older, I save up and buy the clothes I want. I’m a dream chaser.",
       "## Do you have someone who influences you in fashion?",
       "Yes, my elder cousin and my older friends who live in South Africa. I always wanted to dress like my cousin because he was cool and all the girls wanted to hang out with him. The hip hop world influenced me a lot too.",
       "## What are some of your fashion essentials?",
       "Sneakers, flashy chains.",
-      "## How do you manage your time?,
+      "## How do you manage your time?,"
       "In my free time, I either go shopping with my homies, or we just chill and double up on ideas. I love hanging out with the guys I really vibe with, playing games and having fun. I also make time for my mom and little sisters, taking them out and spending quality time with them because I live for them.",
       "## How would you describe your style?",
       "My style? It’s expensive and hard.",
