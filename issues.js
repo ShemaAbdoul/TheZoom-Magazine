@@ -4,11 +4,11 @@ const TO = SITE.email;
 const NEXT = '2026-11-20'; // date of the next issue
 const I = [
   { n: 7, date: 'October 2026', title: 'The Close-Up Issue', pages: 84, online: true, dp: '$4.99', du: '', pp: '$14.00', pu: '', blurb: 'Eighty-four pages of stories told up close: the builders, sellers and players shaping the city.' },
-  { n: 6, date: 'September 2026', title: 'Night Shift', pages: 80, online: true, dp: '$3.99', du: '', pp: '$12.00', pu: '' },
-  { n: 5, date: 'August 2026', title: 'Made Here', pages: 76, online: true, dp: '$3.99', du: '', pp: '$12.00', pu: '' },
-  { n: 4, date: 'July 2026', title: 'Pitch Perfect', pages: 80, online: true, dp: '$3.99', du: '', pp: '$12.00', pu: '' },
-  { n: 3, date: 'June 2026', title: 'Pocket Money', pages: 72, online: true, dp: '$3.99', du: '', pp: '$12.00', pu: '' },
-  { n: 2, date: 'May 2026', title: 'Sound of the City', pages: 68, online: true, dp: '$3.99', du: '', pp: '$12.00', pu: '' },
+  { n: 6, date: 'September 2026', title: 'Mode Fashion', pages: 80, online: true, dp: '$3.99', du: '', pp: '$12.00', pu: '' },
+  { n: 5, date: 'August 2026', title: 'Made With Love', pages: 76, online: true, dp: '$3.99', du: '', pp: '$12.00', pu: '' },
+  { n: 4, date: 'July 2026', title: 'Dream Big', pages: 80, online: true, dp: '$3.99', du: '', pp: '$12.00', pu: '' },
+  { n: 3, date: 'June 2026', title: 'The Drive', pages: 72, online: true, dp: '$3.99', du: '', pp: '$12.00', pu: '' },
+  { n: 2, date: 'May 2026', title: 'Shoot & Shout', pages: 68, online: true, dp: '$3.99', du: '', pp: '$12.00', pu: '' },
   { n: 1, date: 'April 2026', title: 'First Look', pages: 64, online: true, dp: '$3.99', du: '', pp: '$12.00', pu: '' }
 ];
 
