@@ -1,7 +1,7 @@
 // THE ZOOM: all stories live here. Edit a story, add a new one, or delete one.
 // Each story is one block between { and }. Keep the commas between blocks.
 //   id      a unique number (the story link is story.html?id=NUMBER)
-//   cat     Tech, Fashion, Music or Review
+//   cat     Tech, Culture, Fashion, Music or Review
 //   img     the thumbnail and top picture, saved in the images folder (best size: 1600 x 900 pixels)
 //   colors  three colours shown if the picture is missing
 //   reads   a number used to rank the "Most read" list (higher = higher up)
