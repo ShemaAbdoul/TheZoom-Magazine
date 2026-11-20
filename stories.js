@@ -14,37 +14,36 @@ const STORIES = [
     author: 'Abdoul Shema', date: '2026-10-20', mins: 6, reads: 980,
     img: 'assets/images/posts/story-01.jpg', thumb: 'assets/images/thumbs/story-01.jpg', alt: 'Initials release', colors: ['#2540ff', '#0b1426', '#ffd23f'],
     body: [
-      "YOU SHOULD HAVE STAYED HOME is a statement, a challenge, and a small punch in the gut, the good kind. INITIALS drops this collection on 1 December, and it hits that space between streetwear and personal truth. It’s not a piece of fabric you wear just to look good. It’s a message you walk around with. The designer behind INITIALS has always pushed for clothes that feel personal without trying too hard. This drop is exactly that. You wear it when you don’t owe anyone an explanation. You wear it when stepping outside is a choice, not an obligation. You wear it when you choose yourself.",
+      "YOU SHOULD HAVE STAYED HOME is a statement, a challenge, and a small punch in the gut, the good kind. INITIALS drops this collection on 1 December, and it hits that space between streetwear and personal truth. It’s not a piece of fabric you wear to look good. It’s a message you wear. The designer behind INITIALS has always pushed for clothes that feel personal without trying too hard. This drop is exactly that. You wear it when you don’t owe anyone an explanation. You wear it when stepping outside is a choice, not an obligation. You wear it when you choose yourself.",
       "What the Collection Represents",
       "This collection isn’t about staying home literally. It’s about the moments where you should have trusted your gut. How many times have you said to yourself, “I should’ve stayed home”? That’s the emotional backbone of these pieces: regret turned into style, experience turned into fabric.",
-      
       "## The Aesthetics",
       "INITIALS keeps its usual identity: minimal lines, clean silhouettes, and colors that don’t scream but still stand out. The collection leans into darker mood tones that feel heavy, mature, and deeply intentional.",
       
-"Expect: ",
+      "Expect: ",
       
-"• Comfortable oversized tees",
+      "Comfortable oversized tees",
 
-"• Hoodies with the message pressed boldly",
+      "Hoodies with the message pressed boldly",
 
-"• Structured pieces that feel premium",
+      "Structured pieces that feel premium",
 
-"• Textures that hold their shape",
+      "Textures that hold their shape",
 
-"• A modern minimal approach",
+      "A modern minimal approach",
 
-"• A tone that’s both calm and confrontational",
+      "A tone that’s both calm and confrontational",
 
-"Each piece feels like a memory you’re wearing but one you’re owning instead of running from.",
+      "Each piece feels like a memory you’re wearing but one you’re owning instead of running from.",
       
-       "## The Creative Eye Behind the Lens",
-      "Every strong collection needs a sharp photographer. This one has Gakwaya Kenny. His work brings out the raw feeling of the message, not exaggerated, not polished to death. Just honest frames, real moods, and the kind of composition that makes you look twice. Brand Owner Contact (for orders, business inquiries, partnerships): 📞 0791323663 | Name: Quentin Dan.",
+      "## The Creative Eye Behind the Lens",
+      "Every strong collection needs a sharp photographer. This one has Gakwaya Kenny. His work brings out the raw feeling of the message, not exaggerated, not polished to death. Just honest frames, real moods, and the kind of composition that makes you look twice. Brand Owner Contact (for orders, business inquiries, partnerships): 0791323663 | Name: Quentin Dan.",
 
       "## Why This Drop Matters",
       "Streetwear in Rwanda is changing. More young brands are finally embracing identity, storytelling, and mood, not just logos and colors. INITIALS is part of that new wave, the one that actually has something to say. This collection doesn’t force you to interpret anything. The message is clear: Sometimes you should have stayed home. But today, you didn’t, and you showed up in something worth remembering.",
 
       "## Launch Date",
-      "🗓️ 1 December |📍Available through INITIALS (ig: initials_merch). Make sure you’re ready. Drops like this don’t wait for anyone.",
+      "1 December | Available through INITIALS (ig: initials_merch). Make sure you’re ready. Drops like this don’t wait for anyone.",
       
       
       "> Whether you like clothes with a message, or you just want something clean and bold for the season, this drop is worth checking out. INITIALS is carving its own lane, and this collection is another proof the brand isn’t just designing; it’s evolving."
@@ -53,21 +52,18 @@ const STORIES = [
   {
     id: 2, cat: 'Music', title: 'Album Review: MABEL TRAIN TO THE SKY by Manzi Fleur',
     dek: 'The warm, soulful production perfectly complements his introspective lyrics, creating an almost cinematic sound.',
-    author: 'The Zoom Team', date: '2026-10-18', mins: 5, reads: 640,
+    author: 'TheZoom Team', date: '2026-10-18', mins: 5, reads: 640,
     img: 'assets/images/posts/story-02.jpg', thumb: 'assets/images/thumbs/story-02.jpg', alt: 'A shop owner photographing products to sell online', colors: ['#ff7a59', '#7a1f5c', '#ffd23f'],
     body: [
       "Rwandan rising star Manzi Fleur has emerged with MABEL TRAIN TO THE SKY, a project that feels like a personal journey, told through a blend of soul, Afrobeat, and a touch of R&B. The album, with its 11 tracks and 36 minutes of smooth listening, showcases Fleur’s growth as an artist while tapping into a refreshing mix of introspective storytelling and vibrant soundscapes.",
       "## Track Highlights: 'Violet Jones' & 'Marmalade' ",
       "Track 3, 'Violet Jones,' is a clear standout. This song captures the quiet vulnerability that makes Fleur's work so engaging. The warm, soulful production perfectly complements his introspective lyrics, creating an almost cinematic sound. 'Violet Jones' feels like a journey through emotional highs and lows—an ode to self-discovery and love, enveloped in a sonic atmosphere that makes it one of the most memorable on the album.",
-      "Then there’s Track 8, 'Marmalade,' which is a striking departure. This song shifts gears, delivering a dynamic energy with its playful, upbeat rhythm. Fleur’s vocals, paired with the production's layers, feel sun-drenched, like a summer anthem that invites listeners to let go and live in the moment. It's infectious and vibrant, contrasting the moodier tracks, yet it fits perfectly within the album’s overall journey."
-
+      "Then there’s Track 8, 'Marmalade,' which is a striking departure. This song shifts gears, delivering a dynamic energy with its playful, upbeat rhythm. Fleur’s vocals, paired with the production's layers, feel sun-drenched, like a summer anthem that invites listeners to let go and live in the moment. It's infectious and vibrant, contrasting the moodier tracks, yet it fits perfectly within the album’s overall journey.",
       "## The Train Metaphor: A Journey in Sound and Storytelling ",
       "The album’s title, MABEL TRAIN TO THE SKY, feels symbolic. Like a train ride, the album takes listeners through different emotional landscapes—some soft and introspective, others more energetic and uplifting. Fleur’s ability to balance those moods keeps the project compelling from start to finish. It’s a well-rounded album that doesn’t linger too long in one place, offering a full spectrum of emotions and sonic experimentation.",
-
-        "## A Future Bright for Rwandan Music ",
+      "## A Bright Future for Rwandan Music ",
       "What stands out most is how Manzi Fleur brings a uniquely Rwandan perspective while crafting sounds that appeal globally. MABEL TRAIN TO THE SKY could easily sit alongside international projects, yet it remains deeply connected to Rwanda's growing music scene. Fleur is helping define the future of that scene, pushing boundaries with innovative sounds, but staying grounded in the authenticity of his roots.",
-
-        "## Final Thoughts ",
+      "## Final Thoughts ",
       "Violet Jones and Marmalade encapsulate the emotional depth and sonic diversity of this project. MABEL TRAIN TO THE SKY is a testament to Manzi Fleur’s ability to craft a cohesive and emotionally rich body of work, leaving us eagerly anticipating what’s next. You can listen to “MABEL TRAIN TO THE SKY” everywhere.",
       
     ]
@@ -81,9 +77,9 @@ const STORIES = [
       "With a bold aesthetic that combines streetwear with high fashion, Fragile is making waves not just in the wardrobes of trendsetters but also in the broader fashion conversation.",
       "## Design Philosophy",
       "At its core, Fragile embraces the idea of imperfection and vulnerability. The brand’s designs often feature deconstructed elements, unexpected color combinations, and intricate layering, reflecting the complexities of modern life. This unique approach invites wearers to embrace their flaws and express themselves unapologetically.",
-       "## Collections",
+      "## Collections",
       "Each collection feels like a story, woven together through garments that convey a message. Whether it’s a striking oversized jacket or a pair of uniquely designed sneakers, every piece embodies a sense of authenticity. The use of sustainable materials also showcases Fragile’s commitment to environmental consciousness, a crucial factor for today’s conscious consumers.",
-       "## Cultural Impact",
+      "## Cultural Impact",
       "Fragile isn’t just about clothing; it’s a movement. It challenges societal standards of beauty and encourages a dialogue about mental health and self-acceptance. The brand often collaborates with artists and activists, amplifying voices that promote change. This combination of fashion and social commentary makes Fragile a brand to watch in the evolving landscape of modern style.",
       "> If you’re looking to make a statement while supporting a brand that prioritizes authenticity and sustainability, Fragile is your go-to. Its pieces not only elevate your wardrobe but also inspire confidence and conversation about what it means to be truly ‘fragile’ in a world that often demands perfection."
     ]
@@ -97,16 +93,12 @@ const STORIES = [
       "With a fresh approach to music, Chris Kai is carving out a space for himself in the ever-evolving African music scene.",
       "## Musical Style",
       "Afrotoxic fuses traditional African rhythms with contemporary sounds, creating a musical experience that feels both nostalgic and modern. Tracks like “Toxic” and “Désolé” feature catchy hooks and infectious beats, inviting listeners to dance while reflecting on deeper themes of love, heartbreak, and resilience.",
-      
       "## Lyrical Depth",
       "What sets Chris Kai apart is his ability to weave personal narratives into his music. The lyrics resonate with listeners, reflecting universal experiences through a distinctly Rwandan lens. His storytelling is both relatable and profound, making it easy to connect with his journey.",
-
       "## Production Quality",
       "The album boasts high production quality, blending live instrumentation with electronic elements seamlessly. Collaborations with talented producers and artists elevate the sound, adding layers of richness to each track. Chris Kai’s vocal delivery is confident and smooth, showcasing his growth as an artist.",
-
       "## Verdict",
       "Afrotoxic is not just an album; it’s a cultural statement. Chris Kai is pushing the boundaries of Afrobeat while staying true to his roots. This album is a must-listen for anyone looking to explore the vibrant sounds of contemporary African music. Don’t miss out on this rising star—Chris Kai is here to stay."
-
     ]
   },
   {
@@ -116,7 +108,7 @@ const STORIES = [
     img: 'assets/images/posts/story-05.jpg', thumb: 'assets/images/thumbs/story-05.jpg', alt: 'Paying with a phone at a market stall', colors: ['#2de2c4', '#0b1426', '#2540ff'],
     body: [
       "It starts innocently enough—just checking your phone for a minute—but before you know it, hours have flown by. It’s not just about the time lost; it’s the moments we miss. That’s why taking a break from screens, even for just one day, can feel like hitting the reset button on life.",
-      "To make it work, it helps to plan ahead. Let the people who usually text or email you know that you’ll be offline for the day. That way, you’re not constantly worrying about missing something urgent. You can even set up an auto-reply to keep things stress-free.",
+      "To make it work, it helps to plan. Let the people who usually text or email you know that you’ll be offline for the day. That way, you’re not constantly worrying about missing something urgent. You can even set up an auto-reply to keep things stress-free.",
       "But here’s the fun part: deciding what to do with your day. Maybe it’s finally starting that book you’ve been meaning to read or heading out for a hike. You could even rediscover an old hobby, like painting, baking, or gardening. The trick is to focus on things that don’t need a screen to feel rewarding.",
       "One tip that works wonders is creating tech-free zones. For instance, leave your phone out of the bedroom or dining area. It’s incredible how much more present you feel when there’s no screen pulling your attention away.",
       "By the end of the day, you might notice something surprising. Maybe you felt calmer, more present, or just… lighter. It’s not about hating technology—it’s about finding balance."
@@ -149,13 +141,10 @@ const STORIES = [
       "Her works, including I Know Why the Caged Bird Sings, are not only literary masterpieces but also profound commentaries on race, identity, and the human experience.",
       "## Literary Impact",
       "Angelou’s writing style is rich and evocative, blending personal narrative with universal themes. Her ability to convey complex emotions through simple yet powerful language allows readers to connect deeply with her stories. I Know Why the Caged Bird Sings is a testament to her resilience, detailing her journey from trauma to triumph.",
-
       "## Themes of Empowerment",
       "Central to Angelou’s work is the theme of empowerment, particularly for marginalized voices. She addresses issues of racism, sexism, and personal identity with unwavering honesty. Her courage to share her experiences has opened doors for discussions about social justice and equality, making her an essential figure in American literature.",
-
       "## Cultural Relevance",
       "Even years after her passing, Angelou’s words remain relevant. They resonate with contemporary struggles for justice and equality, reminding us of the power of resilience. Her quotes have become rallying cries for movements advocating for change, illustrating the lasting impact of her legacy.",
-
       "Maya Angelou’s work is a treasure trove of wisdom and inspiration. Her ability to articulate the complexities of the human experience continues to resonate today. Reading her works is not just an exercise in literature; it’s an exploration of courage, strength, and the unbreakable spirit of humanity. If you haven’t delved into her writing yet, now is the perfect time to discover the magic of Maya Angelou."
     ]
   }
