@@ -1,7 +1,7 @@
 // THE ZOOM: all stories live here. Edit a story, add a new one, or delete one.
 // Each story is one block between { and }. Keep the commas between blocks.
 //   id      a unique number (the story link is story.html?id=NUMBER)
-//   cat     Tech, Business, Culture or Sport
+//   cat     Tech, Fashion, Music or Review
 //   img     the thumbnail and top picture, saved in the images folder (best size: 1600 x 900 pixels)
 //   colors  three colours shown if the picture is missing
 //   reads   a number used to rank the "Most read" list (higher = higher up)
@@ -15,7 +15,7 @@ const STORIES = [
     img: 'assets/images/posts/story-01.jpg', thumb: 'assets/images/thumbs/story-01.jpg', alt: 'Initials release', colors: ['#2540ff', '#0b1426', '#ffd23f'],
     body: [
       "YOU SHOULD HAVE STAYED HOME is a statement, a challenge, and a small punch in the gut, the good kind. INITIALS drops this collection on 1 December, and it hits that space between streetwear and personal truth. It’s not a piece of fabric you wear to look good. It’s a message you wear. The designer behind INITIALS has always pushed for clothes that feel personal without trying too hard. This drop is exactly that. You wear it when you don’t owe anyone an explanation. You wear it when stepping outside is a choice, not an obligation. You wear it when you choose yourself.",
-      "What the Collection Represents",
+      "## What the Collection Represents",
       "This collection isn’t about staying home literally. It’s about the moments where you should have trusted your gut. How many times have you said to yourself, “I should’ve stayed home”? That’s the emotional backbone of these pieces: regret turned into style, experience turned into fabric.",
       "## The Aesthetics",
       "INITIALS keeps its usual identity: minimal lines, clean silhouettes, and colors that don’t scream but still stand out. The collection leans into darker mood tones that feel heavy, mature, and deeply intentional.",
@@ -53,7 +53,7 @@ const STORIES = [
     id: 2, cat: 'Music', title: 'Album Review: MABEL TRAIN TO THE SKY by Manzi Fleur',
     dek: 'The warm, soulful production perfectly complements his introspective lyrics, creating an almost cinematic sound.',
     author: 'TheZoom Team', date: '2026-10-18', mins: 5, reads: 640,
-    img: 'assets/images/posts/story-02.jpg', thumb: 'assets/images/thumbs/story-02.jpg', alt: 'A shop owner photographing products to sell online', colors: ['#ff7a59', '#7a1f5c', '#ffd23f'],
+    img: 'assets/images/posts/story-02.jpg', thumb: 'assets/images/thumbs/story-02.jpg', alt: 'Manzi Fleur', colors: ['#ff7a59', '#7a1f5c', '#ffd23f'],
     body: [
       "Rwandan rising star Manzi Fleur has emerged with MABEL TRAIN TO THE SKY, a project that feels like a personal journey, told through a blend of soul, Afrobeat, and a touch of R&B. The album, with its 11 tracks and 36 minutes of smooth listening, showcases Fleur’s growth as an artist while tapping into a refreshing mix of introspective storytelling and vibrant soundscapes.",
       "## Track Highlights: 'Violet Jones' & 'Marmalade' ",
@@ -72,7 +72,7 @@ const STORIES = [
     id: 3, cat: 'Fashion', title: 'Fragile Review: A Fashion Statement in the Digital Age',
     dek: 'In a world where fashion constantly evolves, Fragile stands out as a brand that challenges norms while celebrating individuality.',
     author: 'Abdoul Shema', date: '2026-10-15', mins: 4, reads: 410,
-    img: 'assets/images/posts/story-03.jpg', thumb: 'assets/images/thumbs/story-03.jpg', alt: 'A colourful street mural at dusk', colors: ['#8f3bff', '#12102b', '#ff3d7f'],
+    img: 'assets/images/posts/story-03.jpg', thumb: 'assets/images/thumbs/story-03.jpg', alt: 'Fragile', colors: ['#8f3bff', '#12102b', '#ff3d7f'],
     body: [
       "With a bold aesthetic that combines streetwear with high fashion, Fragile is making waves not just in the wardrobes of trendsetters but also in the broader fashion conversation.",
       "## Design Philosophy",
@@ -88,7 +88,7 @@ const STORIES = [
     id: 4, cat: 'Music', title: 'Chris Kai Review: The Sound of Afrotoxic',
     dek: 'Rwandan artist Chris Kai’s latest album, Afrotoxic, is a vibrant celebration of Afrobeat that showcases his unique sound and cultural roots.',
     author: 'TheZoom Team', date: '2026-10-12', mins: 5, reads: 520,
-    img: 'assets/images/posts/story-04.jpg', thumb: 'assets/images/thumbs/story-04.jpg', alt: 'Young players on a neighbourhood football pitch', colors: ['#1fbf75', '#0b3d2e', '#ffd23f'],
+    img: 'assets/images/posts/story-04.jpg', thumb: 'assets/images/thumbs/story-04.jpg', alt: 'Afrotoxic', colors: ['#1fbf75', '#0b3d2e', '#ffd23f'],
     body: [
       "With a fresh approach to music, Chris Kai is carving out a space for himself in the ever-evolving African music scene.",
       "## Musical Style",
@@ -105,7 +105,7 @@ const STORIES = [
     id: 5, cat: 'Tech', title: 'Tech Detox 101: Breaking Up with Your Screen (For a Day)',
     dek: 'Have you ever realized how much time you spend staring at screens?',
     author: 'Abdoul Shema', date: '2026-10-09', mins: 4, reads: 870,
-    img: 'assets/images/posts/story-05.jpg', thumb: 'assets/images/thumbs/story-05.jpg', alt: 'Paying with a phone at a market stall', colors: ['#2de2c4', '#0b1426', '#2540ff'],
+    img: 'assets/images/posts/story-05.jpg', thumb: 'assets/images/thumbs/story-05.jpg', alt: 'Detox', colors: ['#2de2c4', '#0b1426', '#2540ff'],
     body: [
       "It starts innocently enough—just checking your phone for a minute—but before you know it, hours have flown by. It’s not just about the time lost; it’s the moments we miss. That’s why taking a break from screens, even for just one day, can feel like hitting the reset button on life.",
       "To make it work, it helps to plan. Let the people who usually text or email you know that you’ll be offline for the day. That way, you’re not constantly worrying about missing something urgent. You can even set up an auto-reply to keep things stress-free.",
@@ -118,7 +118,7 @@ const STORIES = [
     id: 6, cat: 'Culture', title: 'We Outside Again: Notes from Kigali’s Night Loop',
     dek: 'Same faces, same lights, same laughter, Kigali’s nightlife is a loop we can’t help but love.',
     author: 'Abdoul Shema', date: '2026-10-05', mins: 3, reads: 300,
-    img: 'assets/images/posts/story-06.jpg', thumb: 'assets/images/thumbs/story-06.jpg', alt: 'Headphones and a mug by a window at sunrise', colors: ['#ffd23f', '#ff7a59', '#2540ff'],
+    img: 'assets/images/posts/story-06.jpg', thumb: 'assets/images/thumbs/story-06.jpg', alt: 'Kigali Night Life', colors: ['#ffd23f', '#ff7a59', '#2540ff'],
     body: [
       "There’s something about Kigali nights that strange mix of calm and chaos, soft hills and loud bass. The city looks peaceful from a distance, but step inside any bar after 9 p.m. and you’ll realize peace clocked out hours ago.",
       "Every weekend, the same story unfolds. You walk in thinking you’re just passing by, maybe grabbing one drink, but five minutes later you’re hugging the same faces you saw last Friday. And the Friday before that. And the one before that.",
@@ -136,7 +136,7 @@ const STORIES = [
     id: 7, cat: 'Review', title: 'Maya Angelou Review: A Legacy of Empowerment',
     dek: 'Maya Angelou is more than just a poet; she is a cultural icon whose words have inspired generations.',
     author: 'The Zoom Team', date: '2026-10-01', mins: 5, reads: 720,
-    img: 'assets/images/posts/story-07.jpg', thumb: 'assets/images/thumbs/story-07.jpg', alt: 'A freelancer at a laptop with an invoice', colors: ['#0b1426', '#2540ff', '#2de2c4'],
+    img: 'assets/images/posts/story-07.jpg', thumb: 'assets/images/thumbs/story-07.jpg', alt: 'Maya Angelou', colors: ['#0b1426', '#2540ff', '#2de2c4'],
     body: [
       "Her works, including I Know Why the Caged Bird Sings, are not only literary masterpieces but also profound commentaries on race, identity, and the human experience.",
       "## Literary Impact",
