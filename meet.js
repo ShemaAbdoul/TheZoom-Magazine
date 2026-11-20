@@ -73,15 +73,61 @@ const MEET = [
     ]
   },
   {
-    id: 3, cat: 'Poem', role: 'Poet', title: 'Meet Amara',
-    dek: 'A new poem about mornings, memory and the sound of the street.',
-    author: 'Amara N. (sent in by email)', date: '2026-10-16', mins: 2,
+    id: 3, cat: 'Interview', role: 'Graphic Designer', title: 'Meet Uche',
+    dek: 'Meet Ichie Uche: The Creative Powerhouse.',
+    author: 'Shabani.S (sent in by email)', date: '2026-10-16', mins: 2,
     img: 'assets/images/meet/meet-03.jpg', alt: 'Amara, poet', colors: ['#8f3bff', '#12102b', '#2de2c4'],
     body: [
-      '## Morning Reel',
-      'The kettle clears its throat at six,<br>the street unfolds its paper wings,<br>somewhere a radio remembers<br>all the songs my mother sings.',
-      'Light climbs the wall like a slow cat<br>and spills its gold across the floor.<br>I carry yesterday in my pockets<br>and set it down beside the door.',
-      '<em>Have a poem of your own? Use the button on the Meet page to send it to us.</em>'
+      "Ichie Uche is a Nigerian graphic and product designer based in Rwanda, bringing fresh ideas and creativity to the design world. With a diverse skill set ranging from brand identity design to UX/UI, Uche has worked with remarkable brands and continues to shape the creative landscape in Kigali. In this interview, we explore his journey, influences, and thoughts on the ever-evolving world of design.",
+      "## Tell us about yourself, Uche!",
+      "Hi, I’m Uche. I’m a graphic/product designer from Lagos, Nigeria, currently based in Kigali. I create visual identities for remarkable brands. Some of my skills include brand identity design, user research, synthesizing research into insights and ideas, UI/UX design, interaction design, prototyping, user testing, illustrations, and more. Oh, and I believe Game of Thrones is one of the best things to ever happen to humanity! Also, I love table tennis.",
+
+       "## Movie or music person?",
+      "Depends on the mood, actually. Music facilitates my work experience, while movies are a good way to relax.",
+       
+      "## It’s Saturday! Netflix or hangout?",
+      "Hangout. Definitely. About 60% of my clients are businessmen, and I meet many of them at hangouts and networking events.",
+       
+      "## Favorite inspirational place?",
+      "Niyo Art Gallery.",
+       
+      "## What’s your strongest memory from childhood?",
+      "Haha, I remember when I was around 11, I thought I had solved the problem of sitting through the 8 p.m. news by cutting off the TV cable. Five hours later, I realized I couldn’t watch my cartoons! I got the beating of my life—trust Nigerian moms.",
+       
+      "## What’s the best piece of advice you’ve been given?",
+      "'Brand identity is not what people tell you to your face; it’s what people say about you when you’ve left the room.' — Jeff Bezos. What do you do? I’m currently working as a graphic designer at Kasha Rwanda and freelancing as a product designer.",
+       
+      "## Tell us about a project you’re most proud of.",
+      "One of my proudest projects is designing my portfolio. It serves as a medium for others to view projects that I’m equally proud of.",
+      
+      "## What memorable responses have you had for your work?",
+      "A client once told me, 'I came here with a mindset of yes or no, but WOW is what you gave me.'",
+
+      "## Who are your biggest influences?",
+      "Paula Scher (Pentagram), Chris Do (The Futur), and David Armano—just to mention a few.",
+
+
+      "## Tell us about a UX project that didn’t go as planned.",
+      "When I was starting, I worked for a startup building a tool for small businesses. I was tasked with creating a template framework to automatically generate websites based on a business’s name, industry, and brand colors. Despite the hard work, the company folded before we could finish. It was challenging but taught me a lot about web design anatomy. Even failures can be valuable learning experiences.",
+
+      "## What’s the next big trend in UI/UX design?",
+      "The rise of voice-first design, frameless experiences, and emotional design.",
+
+
+      "## What do you like and dislike about freelancing?",
+      "What I like—Being my own boss, following my intuition, and having the flexibility to work from wherever and whenever I want. What I dislike—The lack of brainstorming with colleagues and the challenge of cash flow, especially when working with inexperienced startups.",
+
+      "## Is the artistic life lonely? How do you counteract that?",
+      "No, it’s not lonely. Meetups, design communities, and networking events keep me engaged.",
+
+
+      "## What’s your dream project?",
+      "My dream project is to establish a design program in Kigali to help young creatives develop the skills they need to compete globally. We’ve already started Citadel Inc. in partnership with Figma, which includes a 3-month internship learning program—stay tuned for more!",
+      
+      "## Three tips for upcoming UI/UX designers?",
+      "<em>Every journey begins with a single step—don’t be discouraged by difficulties.</em>",
+      "<em>Set time aside to read and stay updated on the latest UX trends.</em>",
+      "<em>Know your audience early on, as it helps create more effective designs.</em>"
     ]
   },
   {
