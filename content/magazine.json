@@ -1,0 +1,69 @@
+{
+  "nextEditionDate": "2026-12-20",
+  "editions": [
+    {
+      "n": 7,
+      "date": "October 2020",
+      "title": "The Close-Up Issue",
+      "pages": 37,
+      "online": true,
+      "blurb": "This issue is all about representation featuring Peace Haje, Kazi and Roger Jean Nsengiyumva.",
+      "cover": "assets/images/magazine/covers/issue-07.jpg",
+      "pdf": "assets/magazine/pdfs/issue-07.pdf"
+    },
+    {
+      "n": 6,
+      "date": "September 2019",
+      "title": "Mode Fashion",
+      "pages": 41,
+      "online": true,
+      "cover": "assets/images/magazine/covers/issue-06.jpg",
+      "pdf": "assets/magazine/pdfs/issue-06.pdf"
+    },
+    {
+      "n": 5,
+      "date": "August 2019",
+      "title": "Made With Love",
+      "pages": 45,
+      "online": true,
+      "cover": "assets/images/magazine/covers/issue-05.jpg",
+      "pdf": "assets/magazine/pdfs/issue-05.pdf"
+    },
+    {
+      "n": 4,
+      "date": "July 2018",
+      "title": "Dream Big",
+      "pages": 37,
+      "online": true,
+      "cover": "assets/images/magazine/covers/issue-04.jpg",
+      "pdf": "assets/magazine/pdfs/issue-04.pdf"
+    },
+    {
+      "n": 3,
+      "date": "June 2018",
+      "title": "The Drive",
+      "pages": 35,
+      "online": true,
+      "cover": "assets/images/magazine/covers/issue-03.jpg",
+      "pdf": "assets/magazine/pdfs/issue-03.pdf"
+    },
+    {
+      "n": 2,
+      "date": "May 2017",
+      "title": "Shoot & Shout",
+      "pages": 13,
+      "online": true,
+      "cover": "assets/images/magazine/covers/issue-02.jpg",
+      "pdf": "assets/magazine/pdfs/issue-02.pdf"
+    },
+    {
+      "n": 1,
+      "date": "April 2016",
+      "title": "First Look",
+      "pages": 29,
+      "online": true,
+      "cover": "assets/images/magazine/covers/issue-01.jpg",
+      "pdf": "assets/magazine/pdfs/issue-01.pdf"
+    }
+  ]
+}

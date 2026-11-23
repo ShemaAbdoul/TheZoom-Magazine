@@ -1,0 +1,192 @@
+media:
+  - name: story-images
+    label: Story images
+    input: assets/images/posts
+    output: /assets/images/posts
+    extensions: [jpg, jpeg, png, webp]
+    categories: [image]
+
+  - name: story-thumbnails
+    label: Story thumbnails
+    input: assets/images/thumbs
+    output: /assets/images/thumbs
+    extensions: [jpg, jpeg, png, webp]
+    categories: [image]
+
+  - name: meet-portraits
+    label: Meet portraits
+    input: assets/images/meet
+    output: /assets/images/meet
+    extensions: [jpg, jpeg, png, webp]
+    categories: [image]
+
+  - name: magazine-covers
+    label: Magazine covers
+    input: assets/images/magazine/covers
+    output: /assets/images/magazine/covers
+    extensions: [jpg, jpeg, png, webp]
+    categories: [image]
+
+  - name: magazine-pdfs
+    label: Magazine PDFs
+    input: assets/magazine/pdfs
+    output: /assets/magazine/pdfs
+    extensions: [pdf]
+    categories: [document]
+    
+content:
+  - name: stories
+    label: Stories
+    type: file
+    path: content/stories.json
+    format: json
+    list: true
+    fields:
+      - name: id
+        label: ID
+        type: number
+        required: true
+      - name: cat
+        label: Category
+        type: string
+        required: true
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: dek
+        label: Short introduction
+        type: text
+      - name: author
+        label: Author
+        type: string
+      - name: date
+        label: Publication date
+        type: date
+      - name: mins
+        label: Reading time (minutes)
+        type: number
+      - name: reads
+        label: Read count
+        type: number
+      - name: img
+        label: Main image
+        type: image
+        options:
+          media: story-images
+      - name: thumb
+        label: Thumbnail
+        type: image
+        options:
+          media: story-thumbnails
+      - name: alt
+        label: Image description
+        type: string
+      - name: colors
+        label: Fallback colors
+        type: string
+        list: true
+      - name: body
+        label: Article content (one paragraph or heading per item; start headings with ## and quotes with >)
+        type: text
+        list: true
+
+  - name: meet
+    label: Meet — Artists & Creatives
+    type: file
+    path: content/meet.json
+    format: json
+    list: true
+    fields:
+      - name: id
+        label: ID
+        type: number
+        required: true
+      - name: cat
+        label: Content type
+        type: string
+        required: true
+      - name: role
+        label: Creative role
+        type: string
+      - name: title
+        label: Profile title
+        type: string
+        required: true
+      - name: dek
+        label: Short introduction
+        type: text
+      - name: author
+        label: Author
+        type: string
+      - name: date
+        label: Publication date
+        type: date
+      - name: mins
+        label: Reading time (minutes)
+        type: number
+      - name: img
+        label: Portrait
+        type: image
+        options:
+          media: meet-portraits
+      - name: alt
+        label: Image description
+        type: string
+      - name: colors
+        label: Fallback colors
+        type: string
+        list: true
+      - name: body
+        label: Biography / interview (one paragraph or question per item; start headings with ## and quotes with >)
+        type: text
+        list: true
+
+ 
+  - name: magazine
+    label: Magazine Editions
+    type: file
+    path: content/magazine.json
+    format: json
+    fields:
+      - name: nextEditionDate
+        label: Next edition date
+        type: date
+      - name: editions
+        label: Editions
+        type: object
+        list: true
+        fields:
+          - name: n
+            label: Issue number
+            type: number
+            required: true
+          - name: date
+            label: Edition date
+            type: string
+            required: true
+          - name: title
+            label: Edition title
+            type: string
+            required: true
+          - name: pages
+            label: Page count
+            type: number
+          - name: online
+            label: Available to read online
+            type: boolean
+          - name: blurb
+            label: Description
+            type: text
+          - name: cover
+            label: Cover image
+            type: image
+            options:
+              media: magazine-covers
+          - name: pdf
+            label: PDF edition
+            type: file
+            options:
+              media: magazine-pdfs
+              extensions: [pdf]
+
